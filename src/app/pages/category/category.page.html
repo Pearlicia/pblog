@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first">
+    </ion-menu-button>
+    </ion-buttons>
+    <ion-title>All Category</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let cat of categories"
+      class="source-block" [style]="getBlockColor(cat)"
+      [ngClass]="{'bg-1': cat.name == 'Blog', 'bg-2': 
+      cat.name == 'Jobs', 'bg-3': cat.name == 'Remote Jobs',
+      'bg-4': cat.name == 'Nigeria Jobs', 'bg-5': cat.name == 'Scholarships',
+      'bg-6': cat.name == 'Internships', 'bg-7': cat.name == 'Covid-19',
+      'bg-8': cat.name == 'Npower', 'bg-9': cat.name == 'Technology',
+      'bg-10': cat.name == 'Relationships', 'bg-11': cat.name == 'Forex',
+      'bg-12': cat.name == 'Programming'}"
+        (click)="select(cat)" tappable>
+          
+          <p class="name">{{cat.name}}</p>
+      
+    </div>
+
+  <!-- <ion-list>
+    <ion-item button (click)="select(cat)" *ngFor="let cat of categories">
+      <ion-avatar slot="start">
+        <img [src]="cat.thumb">
+      </ion-avatar> 
+      {{ cat.name }}
+    </ion-item>
+  </ion-list> -->
+  
+</ion-content>

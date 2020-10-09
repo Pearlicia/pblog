@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first">
+    </ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Create Blog
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+   <form [formGroup]="blogForm">
+    
+    <ion-item>
+      <ion-label position="floating">Subject:</ion-label>
+      <ion-input
+        formControlName="subject"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Upload Image:</ion-label>
+      <ion-input type="file" formControlName = "file" (change)="chooseFile($event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Category</ion-label>
+      <ion-select  formControlName="category" >
+      <span *ngFor="let category of blogSubjects; let i=index;">
+          <ion-select-option checked="true" *ngIf="i==0">{{category.name}}</ion-select-option>
+          <ion-select-option *ngIf="i>0" >{{category.name}}</ion-select-option>
+      </span>
+      </ion-select>
+    </ion-item>
+   
+  
+    <ion-item>
+        <quill-editor formControlName="body" [sanitize]="true"></quill-editor>
+       
+      </ion-item>
+    <ion-button expand="full" (click)="saveBlog()">Save Blog</ion-button>
+  </form> 
+         
+</ion-content>

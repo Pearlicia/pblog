@@ -1,0 +1,141 @@
+//  dynamic style
+.source-block {
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    margin-bottom: 2px;
+  
+    .name {
+        font-weight: 600;
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+      }
+  }
+  
+  .bg-1 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/blogimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  .bg-2 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/jobimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  .bg-3 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/remoteimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  
+  .bg-4 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/najajobimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  .bg-5 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/scholaimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  .bg-6 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/internimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  .bg-7 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/covidimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  .bg-8 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/npowerimgp.png');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  .bg-9 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/techimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  .bg-10 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/relimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+
+  .bg-11 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/foreximgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  .bg-12 {
+    background: linear-gradient(
+        var(--myvar), 
+        var(--myvar)
+      ),url('../../../assets/img/progimgp.jpg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+  }
+  
+  
+  p {
+        font-size: 9pt;
+        margin-top: 0;
+    }
